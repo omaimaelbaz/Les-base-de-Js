@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Création et Manipulation d'Objets</h2> 
+    <p>=========================================================================</p>   
+    <div id="div"></div>
+</body>
+</html>
+
+<script>
+    // creation d objects
+
+    const personnes =[
+    {name: 'oumaima1', sex:'femme', age:'25'},
+    {name: 'oumaima2', sex:'femme', age:'25'},
+    {name: 'oumaima3', sex:'femme', age:'25'}
+    ];
+    
+
+    // afichage d'obj
+    var div = document.getElementById('div');
+    personnes.forEach(personne => {
+        var p =document.createElement('p');
+        p.innerHTML=personne.name + ' ' + personne.sex + ' ' + personne.age +'<br>';
+        div.appendChild(p);
+    });
+
+    // aceder  a first object
+    var div = document.getElementById('div');
+    div.innerHTML=personnes[0]['name'];
+    // or
+    div.innerHTML=personnes[0].name;
+
+
+    
+    // aficher all names 
+    var div = document.getElementById('div');
+    personnes.forEach(personne => {
+
+        var p =document.createElement('p');
+        p.innerHTML=personne.name ;
+        div.appendChild(p);
+
+
+    });
+
+
+    
+
+
+  
+</script>
