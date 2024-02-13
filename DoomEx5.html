@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>Manipulation du DOM avec JavaScript !!!</h3>
+
+
+<p id="p" class="p">text avant modifacation</p>
+<p class="p">para 1</p>
+<p class="p"> para 2</p>
+
+<button type="submit" onclick="modifier()">Click Ici</button>
+
+<script>
+    function modifier()
+    {
+        // var  p = document.getElementById('p');
+  
+        //   p.innerHTML = 'content est modifier !!';
+
+    // test avec another selectors like class tags ....
+
+    //-------- by  tagname -->
+
+    // let paraghrape = document.getElementsByTagName('p')[0];
+    // console.log(paraghrape.textContent);
+    // p.innerHTML = 'content est modifier !!';
+
+  //  <---------  By clas name -->
+
+//   let paraghrape = document.getElementsByClassName('p')[0];
+//     p.innerHTML = 'content est modifier !!';
+
+                    //<---------  querySelector---------------->
+
+                    // [ return the first element]
+
+    // let paraghrape = document.querySelector('p');
+    // console.log(paraghrape);
+    //  p.innerHTML = 'content est modifier !!';
+
+
+                        //<---------  querySelectorall()---------------->
+                              // [ return return all matches]
+
+     //let paraghrape = document.querySelectorAll('p')[2];
+    //  console.log(paraghrape.length);
+    //console.log(paraghrape.style.backgroundColor= 'red');
+
+    //paraghrape.innerHTML = 'content est modifier !!';
+
+    }
+</script>
+
+
+
+</body>
+</html>
