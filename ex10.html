@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vlidation form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="text-center">Registration Form</h2>
+        </div>
+        <div class="card-body">
+          <form id="form" action ="test.html"> 
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" data-type="name"  minlength="4" maxlength="8" size="10">
+              <span></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email"  data-type="email" >
+              <span></span>
+
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password:</label>
+             
+             <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password"  data-type="password"   >
+             <span></span>
+
+            </div>
+    
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+            <div id="x"></div>
+          </form>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+ const form = document.getElementById("form");
+
+form.addEventListener("submit", submitForm);
+
+    
+function submitForm(e) {
+  e.preventDefault();
+
+
+var aficher_Message = document.getElementById("x");
+
+aficher_Message.innerHTML = "forme est soumis";
+
+console.log( "forme est soumis")
+  
+
+}
+
+
+
+
+
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
